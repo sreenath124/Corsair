@@ -1,0 +1,333 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+header {
+    height: 50px;
+    background-color: rgba(1, 38, 70, 1);
+    
+    text-align: center;
+}span,
+button,
+h3{
+	text-transform: uppercase;
+}
+h2{
+	color: #000;
+	font: 400 40px 'PT Serif', sans-serif;
+	line-height: 50px;
+	margin-bottom: 40px;
+}
+input,
+textarea {
+    background: transparent;
+    border:1px solid #aaa;
+    font: 700 15px 'PT Sans', sans-serif; 
+    padding: 5px;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 150px;
+}
+input{
+	display: block;
+	width: 60%;
+	margin: 10px auto;
+}
+.max_width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+.sub_heading{
+	color: #1c1a19;
+	font: 700 19px 'PT Sans', sans-serif;
+	line-height: 10px;
+}
+.heading{
+	font: 700 19px 'PT Sans', sans-serif;
+	line-height: 10px;
+}
+
+.content{
+	color: #1c1a19;
+	font: 400 20px 'PT Sans', sans-serif;
+	line-height: 26px;
+	margin-top: 20px;
+	padding: 20px 0;
+}
+.heading_white,
+.content_white{
+	color: #f1f1ef;
+}
+header span{
+	background-color: #2F292B;
+	padding: 5px 20px; 
+	font-style: italic;
+	font-family: 'PT Sans', serif;
+	color: #fff;
+	margin-right: 50px;
+	box-shadow: 2px 2px 2px 2px #000;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+    	         rgba(0,0,0,0.7),
+    	         rgba(0,0,0,0.7)), url('../assets/home_banner.png') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+ 
+}
+.banner h1,
+.banner p{
+	color: #f1f1ef;
+	font-weight: 400;
+}
+.banner h1{
+	font-size: 30px;
+	font-family: 'PT Serif', serif;
+}
+.banner p{
+	font-style: italic;
+
+}
+.banner #corsair_logo {
+	max-width: 300px;
+	width: 80%;
+}
+#btn_grp{
+	padding: 20px 0;
+}
+.banner_btn{
+	background-color: #D55746;
+	color: #fff;
+	border: none;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+.select{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+
+}
+.btns{
+	text-transform: uppercase;
+	background: transparent;
+	width: 100%;
+	padding: 10px 0;
+	font: 700 15px 'PT Sans', sans-serif;
+	font-style: italic;
+	line-height: 13px;
+	display: block;
+	margin: 20px auto;
+}
+.btn_black{
+	color: #1c1a19;
+	border: 1px solid #1c1a19;
+}
+.btn_white{
+	color: #f1f1ef;
+	border: 1px solid #f1f1ef;
+}
+.story img,
+.neighborhood_story img{
+	display: block;
+	margin:0 auto;
+}
+.backstory {
+    background-color: #efecec;
+    text-align: center;
+    padding: 50px 0;
+}
+.map_container{
+	position: relative;
+	height: auto;
+}
+.image_holder{
+	position: relative;
+	top: 0;
+}
+.neighborhood_image {
+	background: url('../assets/neighborhood.jpg') no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	display: block;
+}
+.neighborhood_story{
+	background-color: #292222;
+	display: block;
+	padding: 50px 30px;
+}
+.map{
+	background: url('../assets/Corsair_home_map.jpg') no-repeat;
+	background-size: cover;
+	width: 15%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: none;
+
+}
+.expand_map_btn{
+	position: absolute;
+   		right: 0;
+   		top: 50%;
+   		transform: translateY(-50%);
+   		width: 15%;
+   		display: none;
+}
+.image img {
+    max-width: 500px;
+    width: 100%;
+}
+ .slider_container {
+    	display: table;
+    	position: relative;
+    }
+.slider_story {
+    background-color: #efecec;
+    padding: 50px 30px;
+}
+.slider_story article{
+	text-align: center;
+}
+
+.container{
+	padding: 0;
+	width: 100%;
+}
+	
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.sign_up_container {
+    background: url('../assets/pattern.jpg');
+    min-height: 200px;
+    padding: 50px 0;
+}
+
+.sign_up {
+    background-color: #fff;
+    max-width: 800px;
+    width: 90%;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.query_container {
+    background-color: #292222;
+    text-align: center;
+    padding: 40px 0;
+}
+.query_container form{
+	padding: 40px 0;
+}
+
+footer {
+    background: url('../assets/footer.jpg');
+    min-height: 200px;
+}
+
+@media screen and (min-width: 1024px) {
+   input{
+   	display: inline-block;
+   }
+    .banner h1{
+	font-size: 75px;
+}
+	.banner p{
+		font-size: 32px;
+	}
+
+    .backstory {
+        text-align: left;
+    }
+    .image {
+        display: inline-block;
+        width: 45%;
+    }
+    .story {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+    .image_holder{
+    	width: 85%;
+    	display: table;
+    	height: 100%;
+    }
+    .neighborhood_image{
+    	display: table-cell;
+    		width: 60%;
+    }
+    .neighborhood_story{
+    	display: table-cell;
+    	width: 40%;
+    }
+    .map{
+    	display: block;
+    	transition: all .5s linear;
+    }
+   	.expand_map_btn{
+   		display: block;
+   	}
+   	.expand_map{
+   		width: 100%;
+   		z-index: 10;
+   		background-size: cover;
+   		background-position: center;
+   		
+   	}
+   	.close{
+   		position: absolute;
+   		top: 0;
+   		left: 0;
+   		width: 20px;
+   		height: 20px;
+   		z-index: 5;
+   	}
+    .slider_story {
+        width: 50%;
+        display: table-cell;
+    }
+    .slider_story article {
+        float: right;
+        text-align: left;
+        margin-right: 30px;
+    }
+    .slider {
+        width: 50%;
+       display: table-cell;
+    }  
+}
