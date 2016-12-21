@@ -12,12 +12,31 @@
 </head>
 
 <body>
-    <section>
+    <section class="main_wrapper">
+        <div class="menu_items">
+            <div class="max_width">
+                <img id="close_button" src="assets/close_white.png" alt="close">
+            </div>
+            <div class="menu_contents">
+                <img class="corsair_logo" src="assets/corsair.png" alt="corsair_logo">
+                <nav>
+                    <a href="">The backstory</a>
+                    <a href="">Design &amp; Amenities</a>
+                    <a href="">East Rock</a>
+                    <a href="">Contact</a>
+                </nav>
+                <div class="social_icons menu_social_icons">
+                    <a><img src="assets/instagram.png" alt="instagram"></a>
+                    <a><img src="assets/twitter.png" alt="twiiter"></a>
+                    <a><img src="assets/facebook.png" alt="facebook"></a>
+                </div>
+            </div>
+        </div>
         <header>
             <div class="max_width">
                 <span>Promo Offer goes here</span>
-                <button>
-                    <i id="menu_button" class="fa fa-bars fa-1g" aria-hidden="true"></i>
+                <button class="menu_button">
+                    <i class="fa fa-bars fa-1g" aria-hidden="true"></i>
                 </button>
             </div>
         </header>
@@ -26,14 +45,19 @@
                 <div class="max_width">
                     <h1>Apartments that work as hard as the people who live in them.</h1>
                     <p>Made by Hand and Leasing This Spring in East Rock, New Haven</p>
-                    <img id="corsair_logo" src="assets/corsair.png" alt="corsair">
-                    <div id=btn_grp>
+                    <img class="corsair_logo" src="assets/corsair.png" alt="corsair">
+                    <div class="btn_grp">
                         <button class="banner_btn">Get on the list</button>
                         <button class="banner_btn">hit us up</button>
                     </div>
                     <img class="select" src="assets/select_arrow.png" alt="select_arrow">
                 </div>
             </section>
+            <div id="btn_fixed" class="btn_hidden">
+                <button class="banner_btn">Get on the list</button>
+                <button class="banner_btn">hit us up</button>
+                    <i  class="fa fa-bars fa-2x menu_button" aria-hidden="true"></i>
+            </div>
             <section class="backstory">
                 <div class="max_width">
                     <div class="image">
@@ -60,7 +84,7 @@
                     </div>
                 </div>
                 <div class="map">
-                    <img class="close" src="assets/close.png" alt="close">
+                    <img class="close_map" src="assets/close.png" alt="close">
                 </div>
                 <button class="btns expand_map_btn">Expand map</button>
             </section>
@@ -75,58 +99,76 @@
                     </article>
                 </div>
                 <div class="slider container">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                        </ol>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="assets/Corsair-Lounge-Pic.jpg" alt="Corsair_lounge">
-                            </div>
-                            <div class="item">
-                                <img src="assets/Corsair-Lounge-Pic.jpg" alt="Corsair_lounge">
-                            </div>
-                        </div>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+                    
                 </div>
             </section>
             <section class="sign_up_container clear">
                 <div class="max_width sign_up">
                     <h3 class="heading">sign up for the corsair post</h3>
-                    <p class="content">We'll keep you informed with updates on construction progress, new amenities, events, and other good stuff.</p>
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Email">
-                        <button class="btns">Sign Up</button>
+                    <p class="content ">We'll keep you informed with updates on construction progress, new amenities, events, and other good stuff.</p>
+                    <form id="signup_form">
+                        <fieldset>
+                            <input class="signup_input" type="text" placeholder="First Name">
+                            <input class="signup_input" type="text" placeholder="Last Name">
+                            <input class="signup_input" type="text" placeholder="Email">
+                        </fieldset>
+                        <button class="sign_up_btn">Sign Up</button>
                     </form>
                 </div>
             </section>
             <section class="query_container">
                 <div class="max_width query">
                     <h3 class="heading heading_white">Hit us up for anything</h3>
-                    <p class="content content_white">Have a question? Got and idea? Just want to talk airplane propellers?<br>
-                   We're here for you Monday to Friday, 9am to 5pm.</p>
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="text" placeholder="Email">
-                        <textarea name="message" id="" placeholder="your message"></textarea>
-                        <button class="btns">Send</button>
+                    <p class="content content_white">Have a question? Got and idea? Just want to talk airplane propellers?
+                        <br> We're here for you Monday to Friday, 9am to 5pm.</p>
+                    <form id="query_form">
+                        <fieldset>
+                            <input class="query_input" type="text" placeholder="First Name">
+                            <input class="query_input" type="text" placeholder="Last Name">
+                            <input class="query_input" type="text" placeholder="Email">
+                            <textarea class="query_input" name="message" id="query_msg" placeholder="Your message"></textarea>
+                        </fieldset>
+                        <button class="query_btn">Send</button>
                     </form>
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer_nav">
+                <nav class="max_width">
+                    <a href="">The Backstory</a>
+                    <a href="">Design &amp; Amenities</a>
+                    <a href="">East Rock</a>
+                </nav>
+            </div>
+            <div class="footer_images">
+                <div class="footer_logo">
+                    <img src="assets/corsair_footer.png" alt="corsair_footer">
+                </div>
+                <div class="contact">
+                    <div class="social_icons">
+                        <a><img src="assets/facebook.png" alt="facebook"></a>
+                        <a><img src="assets/twitter.png" alt="twitter"></a>
+                        <a><img src="assets/instagram.png" alt="instagram"></a>
+                    </div>
+                    <address class="address">
+                        1050 State Street, New Haven, CT
+                        <br> hello@corsairnh.com
+                        <br> 203-555-5555
+                    </address>
+                </div>
+                 <div class="copyright">
+                <img src="assets/bozzuto.png" alt="buzzuto">
+                <img src="assets/prr.png" alt="prr">
+                <img src="assets/eho.png" alt="eho">
+                <img src="assets/ada.png" alt="ada">
+                <span>&copy;2015 Bozzuto</span>
+                <span>Privacy Policy</span>
+                <span>Website Disclaimer</span>
+            </div>
+            </div>
+
+        </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->

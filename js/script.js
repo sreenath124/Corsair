@@ -1,11 +1,44 @@
 $(document).ready(function(){
+	var backstory_top = $('.backstory').offset().top;
+
+
+
+	$(document).scroll(function() {
+		if($(this).scrollTop()>= backstory_top) {
+			//console.log("hi");
+			$('#btn_fixed').removeClass('btn_hidden').addClass('btn_visible');
+		}
+		else{
+			$('#btn_fixed').removeClass('btn_visible').addClass('btn_hidden');
+		}
+	});
+
+
+	$('.menu_button').on('click', function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		$('.menu_items').addClass('menu_expand');
+		$('html, body').addClass('no_scroll');
+
+	});
+	$('#close_button').on('click', function() {
+		$('.menu_items').removeClass('menu_expand');
+		$('html, body').removeClass('no_scroll');
+	});
+
 	$('.select').on('click', function() {
 		$('html, body').animate({scrollTop: $('.backstory').offset().top}, 'slow');
 	});
 	$('.expand_map_btn').on('click', function() {
 		$('.map').addClass('expand_map');
 	});
-	$('.close').on('click', function() {
+	$('.close_map').on('click', function() {
 		$('.map').removeClass('expand_map');
 	});
+
+	
+	
+
+	
+
 });
