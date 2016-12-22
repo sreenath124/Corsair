@@ -18,7 +18,9 @@
                 <img id="close_button" src="assets/close_white.png" alt="close">
             </div>
             <div class="menu_contents">
-                <img class="corsair_logo" src="assets/corsair.png" alt="corsair_logo">
+                <a class="logo" href="">
+                    <img class="corsair_logo" src="assets/corsair.png" alt="corsair_logo">
+                </a>
                 <nav>
                     <a href="">The backstory</a>
                     <a href="">Design &amp; Amenities</a>
@@ -26,37 +28,51 @@
                     <a href="">Contact</a>
                 </nav>
                 <div class="social_icons menu_social_icons">
-                    <a><img src="assets/instagram.png" alt="instagram"></a>
-                    <a><img src="assets/twitter.png" alt="twiiter"></a>
-                    <a><img src="assets/facebook.png" alt="facebook"></a>
+                    <a href="">
+                        <img src="assets/instagram.png" alt="instagram">
+                    </a>
+                    <a href="">
+                        <img src="assets/twitter.png" alt="twiiter">
+                    </a>
+                    <a href="">
+                        <img src="assets/facebook.png" alt="facebook">
+                    </a>
                 </div>
             </div>
         </div>
         <header>
-            <div class="max_width">
+            
+        </header>
+        <main>
+            <section class="banner">
+            <div id="menu_section" class="max_width">
                 <span>Promo Offer goes here</span>
                 <button class="menu_button">
                     <i class="fa fa-bars fa-1g" aria-hidden="true"></i>
                 </button>
             </div>
-        </header>
-        <main>
-            <section class="banner">
-                <div class="max_width">
-                    <h1>Apartments that work as hard as the people who live in them.</h1>
-                    <p>Made by Hand and Leasing This Spring in East Rock, New Haven</p>
-                    <img class="corsair_logo" src="assets/corsair.png" alt="corsair">
-                    <div class="btn_grp">
+                <div id="banner_caption" class="max_width">
+                    <h2 id="banner_heading">Apartments that work as hard as the people who live in them.</h2>
+                    <p class="desktop_view">Made by Hand and Leasing This Spring in East Rock, New Haven</p>
+                    <h1>
+                        <a class="logo" href="">
+                            <img class="corsair_logo" src="assets/corsair.png" alt="corsair">
+                        </a>
+                    </h1>
+                    <p class="mobile_view">Made by Hand and Leasing This Spring in East Rock, New Haven</p>
+                    <div class="btn_grp btn_grp_banner">
                         <button class="banner_btn">Get on the list</button>
                         <button class="banner_btn">hit us up</button>
+                        <img class="select" src="assets/select_arrow.png" alt="select_arrow">
                     </div>
-                    <img class="select" src="assets/select_arrow.png" alt="select_arrow">
                 </div>
             </section>
             <div id="btn_fixed" class="btn_hidden">
                 <button class="banner_btn">Get on the list</button>
                 <button class="banner_btn">hit us up</button>
-                    <i  class="fa fa-bars fa-2x menu_button" aria-hidden="true"></i>
+                <a class="logo" href="">
+                    <img class="section_img menu_button" src="assets/menu.png" alt="menu">
+                </a>
             </div>
             <section class="backstory">
                 <div class="max_width">
@@ -67,7 +83,7 @@
                         <h2>135 years of hardwork.</h2>
                         <span class="sub_heading">the backstory of corsair</span>
                         <p class="content">On 1050 State Street, the American worker has been getting down to business for a long time. Cigars, corsets, rifles, cement pipes, carriage locks, galvanized metals, oak barrels, car wheels, airplane propellers-they were all built strong, built to last, built right here. What will you build?</p>
-                        <img src="assets/history_icon.png" alt="history_icon">
+                        <img class="section_img" src="assets/history_icon.png" alt="history_icon">
                         <button class="btns btn_black">read the story</button>
                     </article>
                 </div>
@@ -76,17 +92,19 @@
                 <div class="image_holder">
                     <div class="neighborhood_image"></div>
                     <div class="neighborhood_story">
-                        <h2 class="heading_white">The quintessential neighborhood.</h2>
-                        <span class="sub_heading heading_white">LIFE IN EAST ROCK</span>
-                        <p class="content content_white">East Rock is the neighborhood's neighborhood. It's where you want to want to wake up on rainy mornings, stroll down the sidewalk on sunny afternoons, and ride your bike through the park on those perfectly crisp fall days. Here on Upper State Street, you've got haunts galore-a vaunted New Haven apizza joint, a pour over coffee shop, a farm-to-table gastropub, and an Italian gourmet grocer to boot. All of it just a stone’s throw away from many of Yale's graduate school campuses</p>
-                        <img src="assets/neighborhood_icon.png" alt="neighborhood">
-                        <button class="btns btn_white">explore the neighborhood</button>
+                        <div class="neighborhood_story_inner">
+                            <h2 class="heading_white">The quintessential neighborhood.</h2>
+                            <span class="sub_heading heading_white">LIFE IN EAST ROCK</span>
+                            <p class="content content_white">East Rock is the neighborhood's neighborhood. It's where you want to want to wake up on rainy mornings, stroll down the sidewalk on sunny afternoons, and ride your bike through the park on those perfectly crisp fall days. Here on Upper State Street, you've got haunts galore-a vaunted New Haven apizza joint, a pour over coffee shop, a farm-to-table gastropub, and an Italian gourmet grocer to boot. All of it just a stone’s throw away from many of Yale's graduate school campuses</p>
+                            <img class="section_img" src="assets/neighborhood_icon.png" alt="neighborhood">
+                            <button class="btns btn_white">explore the neighborhood</button>
+                        </div>
                     </div>
                 </div>
                 <div class="map">
                     <img class="close_map" src="assets/close.png" alt="close">
                 </div>
-                <button class="btns expand_map_btn">Expand map</button>
+                <button class="btns expand_map_btn btn_black">Expand map</button>
             </section>
             <section class="slider_container">
                 <div class="slider_story">
@@ -94,16 +112,54 @@
                         <h2>Without equal.</h2>
                         <span class="sub_heading">Craft detals &amp; unexpected amenities</span>
                         <p class="content">New Haven has never seen anything like it. Here, you'll find a swimming pool, decked out cabanas, bocce court, fire pit, grilling stations, pizza oven, and a lawnside movie theater and that's just the courtyard. Every fixture has been carefully thought over, every material sourced responsibly, and every surface layered with generations upon generations of stories.</p>
-                        <img src="assets/amenity_icon.png" alt="amenity">
+                        <img class="section_img" src="assets/amenity_icon.png" alt="amenity">
                         <button class="btns btn_black">view all</button>
                     </article>
                 </div>
                 <div class="slider container">
-                    
+                    <section id="myCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div id="first_slide" class="fill">
+                                    <div class="slider_caption">
+                                        RESTAURANT-STYLE KITCHENS
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="second_slide" class="fill">
+                                    <div class="slider_caption">
+                                        RESIDENT LOUNGE FEATURING RECLAIMED WOOD
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div id="third_slide" class="fill">
+                                    <div class="slider_caption">
+                                        NEST® LEARNING THERMOSTATS
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <img class="icon-next" src="assets/next.png">
+                        </a>
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <img class="icon-prev" src="assets/prev.png">
+                        </a>
+                    </section>
                 </div>
             </section>
             <section class="sign_up_container clear">
-                <div class="max_width sign_up">
+                <div class="sign_up">
                     <h3 class="heading">sign up for the corsair post</h3>
                     <p class="content ">We'll keep you informed with updates on construction progress, new amenities, events, and other good stuff.</p>
                     <form id="signup_form">
@@ -126,7 +182,7 @@
                             <input class="query_input" type="text" placeholder="First Name">
                             <input class="query_input" type="text" placeholder="Last Name">
                             <input class="query_input" type="text" placeholder="Email">
-                            <textarea class="query_input" name="message" id="query_msg" placeholder="Your message"></textarea>
+                            <textarea class="query_input" name="message" id="query_msg" placeholder="Your message..."></textarea>
                         </fieldset>
                         <button class="query_btn">Send</button>
                     </form>
@@ -143,13 +199,15 @@
             </div>
             <div class="footer_images">
                 <div class="footer_logo">
-                    <img src="assets/corsair_footer.png" alt="corsair_footer">
+                    <a class="logo" href="">
+                        <img src="assets/corsair_footer.png" alt="corsair_footer">
+                    </a>
                 </div>
                 <div class="contact">
                     <div class="social_icons">
-                        <a><img src="assets/facebook.png" alt="facebook"></a>
-                        <a><img src="assets/twitter.png" alt="twitter"></a>
-                        <a><img src="assets/instagram.png" alt="instagram"></a>
+                        <a href=""><img src="assets/facebook.png" alt="facebook"></a>
+                        <a href=""><img src="assets/twitter.png" alt="twitter"></a>
+                        <a href=""><img src="assets/instagram.png" alt="instagram"></a>
                     </div>
                     <address class="address">
                         1050 State Street, New Haven, CT
@@ -157,17 +215,32 @@
                         <br> 203-555-5555
                     </address>
                 </div>
-                 <div class="copyright">
-                <img src="assets/bozzuto.png" alt="buzzuto">
-                <img src="assets/prr.png" alt="prr">
-                <img src="assets/eho.png" alt="eho">
-                <img src="assets/ada.png" alt="ada">
-                <span>&copy;2015 Bozzuto</span>
-                <span>Privacy Policy</span>
-                <span>Website Disclaimer</span>
+                <div class="copyright">
+                    <a href="">
+                        <img src="assets/bozzuto.png" alt="buzzuto">
+                    </a>
+                    <a href="">
+                        <img src="assets/prr.png" alt="prr">
+                    </a>
+                    <a href="">
+                        <img src="assets/eho.png" alt="eho">
+                    </a>
+                    <a href="">
+                        <img src="assets/ada.png" alt="ada">
+                    </a>
+                    <div class="copyright_inner">
+                        <span>
+                        <a href="">&copy;2015 Bozzuto</a>
+                        </span>
+                        <span>
+                    <a href="">Privacy Policy</a>
+                    </span>
+                        <span>
+                    <a href="">Website Disclaimer</a>
+                    </span>
+                    </div>
+                </div>
             </div>
-            </div>
-
         </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

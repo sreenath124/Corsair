@@ -14,11 +14,10 @@ $(document).ready(function(){
 	});
 
 
-	$('.menu_button').on('click', function(e){
-		e.preventDefault();
-		e.stopPropagation();
+	$('.menu_button').click(function(e){
 		$('.menu_items').addClass('menu_expand');
 		$('html, body').addClass('no_scroll');
+		return false;
 
 	});
 	$('#close_button').on('click', function() {
@@ -31,13 +30,17 @@ $(document).ready(function(){
 	});
 	$('.expand_map_btn').on('click', function() {
 		$('.map').addClass('expand_map');
+		$('.close_map').addClass('close_map_visible');
 	});
 	$('.close_map').on('click', function() {
 		$('.map').removeClass('expand_map');
+		$('.close_map').removeClass('close_map_visible');
 	});
 
 	
-	
+	$('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
 
 	
 
