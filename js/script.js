@@ -17,7 +17,6 @@ $(document).ready(function(){
 	$('.menu_button').click(function(e){
 		$('.menu_items').addClass('menu_expand');
 		$('html, body').addClass('no_scroll');
-		return false;
 
 	});
 	$('#close_button').on('click', function() {
@@ -41,7 +40,9 @@ $(document).ready(function(){
 	$('.carousel').carousel({
         interval: 5000 //changes the speed
     });
-
+	$('.carousel').on('slide.bs.carousel', function(){
+		$('#prev_slide').show();
+	});
 	
 
 });

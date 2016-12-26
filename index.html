@@ -6,7 +6,6 @@
     <title>Corsair</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,7 +18,7 @@
             </div>
             <div class="menu_contents">
                 <a class="logo" href="">
-                    <img class="corsair_logo" src="assets/corsair.png" alt="corsair_logo">
+                    <img class="corsair_logo_menu" src="assets/corsair.png" alt="corsair_logo">
                 </a>
                 <nav>
                     <a href="">The backstory</a>
@@ -47,9 +46,9 @@
             <section class="banner">
             <div id="menu_section" class="max_width">
                 <span>Promo Offer goes here</span>
-                <button class="menu_button">
-                    <i class="fa fa-bars fa-1g" aria-hidden="true"></i>
-                </button>
+                <a class="logo" href="">
+                    <img class="section_img menu_button" src="assets/menu.png" alt="menu">
+                </a>
             </div>
                 <div id="banner_caption" class="max_width">
                     <h2 id="banner_heading">Apartments that work as hard as the people who live in them.</h2>
@@ -79,7 +78,7 @@
                     <div class="image">
                         <img src="assets/animation.gif" alt="animation">
                     </div>
-                    <article class="story">
+                    <article class="story story_inner">
                         <h2>135 years of hardwork.</h2>
                         <span class="sub_heading">the backstory of corsair</span>
                         <p class="content">On 1050 State Street, the American worker has been getting down to business for a long time. Cigars, corsets, rifles, cement pipes, carriage locks, galvanized metals, oak barrels, car wheels, airplane propellers-they were all built strong, built to last, built right here. What will you build?</p>
@@ -90,14 +89,16 @@
             </section>
             <section class="map_container">
                 <div class="image_holder">
-                    <div class="neighborhood_image"></div>
+                    <div class="neighborhood_image">
+                        <button class="btns btn_white btn_mobile">explore the neighborhood</button>
+                    </div>
                     <div class="neighborhood_story">
-                        <div class="neighborhood_story_inner">
+                        <div class="story_inner">
                             <h2 class="heading_white">The quintessential neighborhood.</h2>
                             <span class="sub_heading heading_white">LIFE IN EAST ROCK</span>
                             <p class="content content_white">East Rock is the neighborhood's neighborhood. It's where you want to want to wake up on rainy mornings, stroll down the sidewalk on sunny afternoons, and ride your bike through the park on those perfectly crisp fall days. Here on Upper State Street, you've got haunts galore-a vaunted New Haven apizza joint, a pour over coffee shop, a farm-to-table gastropub, and an Italian gourmet grocer to boot. All of it just a stone’s throw away from many of Yale's graduate school campuses</p>
                             <img class="section_img" src="assets/neighborhood_icon.png" alt="neighborhood">
-                            <button class="btns btn_white">explore the neighborhood</button>
+                            <button class="btns btn_white btn_desktop">explore the neighborhood</button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +109,7 @@
             </section>
             <section class="slider_container">
                 <div class="slider_story">
-                    <article class="story">
+                    <article class="story story_inner">
                         <h2>Without equal.</h2>
                         <span class="sub_heading">Craft detals &amp; unexpected amenities</span>
                         <p class="content">New Haven has never seen anything like it. Here, you'll find a swimming pool, decked out cabanas, bocce court, fire pit, grilling stations, pizza oven, and a lawnside movie theater and that's just the courtyard. Every fixture has been carefully thought over, every material sourced responsibly, and every surface layered with generations upon generations of stories.</p>
@@ -117,12 +118,12 @@
                     </article>
                 </div>
                 <div class="slider container">
-                    <section id="myCarousel" class="carousel slide">
+                    <section id="Carousel" class="carousel slide">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carousel" data-slide-to="1"></li>
+                            <li data-target="#Carousel" data-slide-to="2"></li>
                         </ol>
                         <!-- Wrapper for Slides -->
                         <div class="carousel-inner">
@@ -149,10 +150,10 @@
                             </div>
                         </div>
                         <!-- Controls -->
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <a id="next_slide" class="right carousel-control" href="#Carousel" data-slide="next">
                             <img class="icon-next" src="assets/next.png">
                         </a>
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <a id="prev_slide" class="left carousel-control" href="#Carousel" data-slide="prev">
                             <img class="icon-prev" src="assets/prev.png">
                         </a>
                     </section>
@@ -198,7 +199,8 @@
                 </nav>
             </div>
             <div class="footer_images">
-                <div class="footer_logo">
+                <div class="footer_images_inner">
+                    <div class="footer_logo">
                     <a class="logo" href="">
                         <img src="assets/corsair_footer.png" alt="corsair_footer">
                     </a>
@@ -239,6 +241,7 @@
                     <a href="">Website Disclaimer</a>
                     </span>
                     </div>
+                </div>
                 </div>
             </div>
         </footer>

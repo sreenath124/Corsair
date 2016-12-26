@@ -109,7 +109,7 @@ i {
 
 h2 {
     color: #000;
-    font: 400 40px 'PT Serif', sans-serif;
+    font: 400 35px 'PT Serif', serif;
     line-height: 50px;
     margin-bottom: 40px;
 }
@@ -147,18 +147,18 @@ textarea {
 
 .sub_heading {
     color: #1c1a19;
-    font: 700 19px 'PT Sans', sans-serif;
+    font: 700 17px 'PT Sans', sans-serif;
     line-height: 24px;
 }
 
 .heading {
-    font: 700 19px 'PT Sans', sans-serif;
+    font: 700 17px 'PT Sans', sans-serif;
     line-height: 22px;
 }
 
 .content {
     color: #1c1a19;
-    font: 400 20px 'PT Sans', sans-serif;
+    font: 400 18px 'PT Sans', sans-serif;
     line-height: 26px;
     margin-bottom: 20px;
     padding: 20px 0;
@@ -168,15 +168,19 @@ textarea {
 .content_white {
     color: #f1f1ef;
 }
+.content_white{
+  margin:0;
+}
 
 #menu_section span {
   display: inline-block;
   width: 90%;
+  max-width: 320px;
   background-color: #2F292B;
     padding: 5px 20px;
-    font-style: italic;
-    font-family: 'PT Sans', serif;
-    color: #fff;
+    font: 700 15px 'PT Sans', sans-serif;
+        font-style: italic;
+    color: #f1f1ef;
 }
 
 #menu_section{
@@ -184,6 +188,10 @@ textarea {
   top: 0;
   text-align: center;
 }
+.section_img{
+  width: 28px;
+}
+
 .banner {
     width: 100%;
     height: 100vh;
@@ -204,27 +212,32 @@ textarea {
 #banner_heading {
     display: none;
     font-family: 'PT Serif', serif;
+    margin-bottom:20px;
 }
 
 .mobile_view {
     width: 50%;
     margin: 0 auto;
     font-style: none;
-    font: 700 20px 'PT Serif', sans-serif;
+    font: 700 20px 'PT Serif', serif;
 }
 
 .desktop_view {
     display: none;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-style: italic;
-    font-family: "PT Serif", sans-serif;
+    font-family: "PT Serif", serif;
 }
 
 .corsair_logo {
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
+    padding: 20px;
 }
-
+.corsair_logo_menu{
+  max-width: 300px;
+  width: 100%;
+}
 .btn_grp {
     padding: 20px 0;
 }
@@ -236,14 +249,15 @@ textarea {
 
 
 #btn_fixed .banner_btn{
-  margin-top: 0;
+  margin: 0;
   width: 50%;
   max-width: 140px;
   padding: 5px 10px;
   vertical-align: top;
 }
+
 #btn_fixed .menu_button{
-  width: 29.5px;
+  width: 29px;
 }
 
 .btn_hidden {
@@ -271,7 +285,7 @@ textarea {
 .banner_btn,
 .sign_up_btn,
 .query_btn{
-    font: 700 15px 'PT Sans', serif;
+    font: 700 15px 'PT Sans', sans-serif;
     font-style: italic;
     color: #f1f1ef;
     padding: 5px 0;
@@ -280,7 +294,7 @@ textarea {
 .sign_up_btn { 
     color: #fff;
     border: none;
-    width: 120px;
+    width: 70%;
     margin: 15px 0;
 }
 
@@ -351,12 +365,14 @@ textarea {
 .menu_contents {
     padding: 100px 0;
 }
-
+.menu_contents .corsair_logo_menu{
+  width: 60%;
+}
 .menu_contents nav a {
     color: #fff;
     text-decoration: none;
     display: block;
-    font: 400 30px 'PT Serif', sans-serif;
+    font: 400 30px 'PT Serif', serif;
     padding-top: 15px;
 }
 
@@ -402,12 +418,15 @@ textarea {
     background-position: center center;
     min-height: 400px;
     display: block;
+    padding: 20px;
+    position: relative;
 }
 
 .neighborhood_story {
     background-color: #292222;
     display: block;
     padding: 50px 30px;
+    text-align: center;
 }
 
 .map {
@@ -438,6 +457,7 @@ textarea {
 .slider_container {
     display: table;
     position: relative;
+    width: 100%;
 }
 
 .slider_story {
@@ -461,16 +481,16 @@ textarea {
 .sign_up_container {
     background: url('../assets/pattern.jpg');
     min-height: 200px;
-    padding: 70px 0;
+    padding: 90px 0;
 }
 
 .sign_up {
-    background-color: #fff;
-    max-width: 1000px;
-    width: 90%;
+    background-color: #FDFDFD;
+    width: 90%; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .sign_up .content {
@@ -487,7 +507,7 @@ textarea {
 }
 .signup_input,
 .query_input{
-  font: 700 15px 'PT Sans', serif;
+  font: 700 15px 'PT Sans', sans-serif;
       font-style: italic;
 }
 
@@ -527,14 +547,34 @@ textarea {
     color: #f1f1ef;
 }
 
+#query_msg::-webkit-input-placeholder {
+    color: #f1f1ef;
+}
+
+#query_msg:-moz-placeholder {
+    /* Firefox 18- */
+    color: #f1f1ef;
+}
+
+#query_msg::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #f1f1ef;
+}
+
+#query_msg:-ms-input-placeholder {
+    color: #f1f1ef;
+}
+
+
+
 .query_container {
     background-color: #292222;
     text-align: center;
-    padding: 40px 0;
+    padding: 80px 20px;
 }
 
 .query_container form {
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 #query_form {
@@ -557,14 +597,13 @@ textarea {
 
 .query_btn {
     background-color: #D55746;
-    width: 150px;
+    width: 70%;
     border: none;
 }
-.section_img{
-  width: 40px;
-}
+
 .logo {
   display: inline-block;
+  vertical-align: top;
 }
 footer {
     background: url('../assets/footer.jpg') no-repeat;
@@ -606,7 +645,6 @@ footer {
 
 .social_icons {
     display: block;
-    margin-left: 10px;
 }
 
 .social_icons a {
@@ -635,13 +673,23 @@ footer {
     margin: 10px;
 }
 
-.copyright span {
+
+.copyright_inner span {
     margin: 10px;
 }
-.copyright span a {
-   color: #fff;
+.copyright_inner a {
+   color: #f1f1ef;
+   font: 400 11px 'PTSans', sans-serif;
    text-decoration: none;
+   display: inline-block;
 }
+.copyright_inner span:nth-child(2){
+ 
+  display: inline-block;
+  position: relative;
+}
+
+
 
 .carousel,
 .item,
@@ -698,25 +746,52 @@ footer {
     border: none;
     background-color: #D55746;
 }
-#myCarousel a {
+#Carousel a {
   background: none;
+}
+#prev_slide{
+  display: none;
 }
 .slider_caption {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 70%;
-  background-color: #ffffff;
+  width: 100%;
+  background-color: #EFEFED;
   padding: 10px;
   color: #1c1a19;
-  font: 700 19px "PT Sans", serif;
+  font: 700 13px "PT Sans", serif;
   font-style: italic;
   text-align: left;
 }
+.btn_mobile{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%);
+  display: block;
+}
+.btn_desktop{
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
+  h2{
+    font-size: 40px;
+  }
+  .sub_heading{
+    font-size: 19px;
+  }
+  .heading{
+    font-size: 19px;
+  }
+  .content{
+    font-size: 20px;
+  }
    #menu_section span {
-    display: inline;
+    display: inline-block;
     margin-right: 50px;
     box-shadow: 2px 2px 2px 2px #000;
 }
@@ -725,10 +800,7 @@ footer {
    #banner_heading {
       font-size: 50px;
      display: block;
-   }
-   h2{
-    font-size: 60px;
-    line-height: 72px;
+     line-height: 65px;
    }
     .mobile_view {
         display: none;
@@ -746,17 +818,26 @@ footer {
   #btn_fixed .banner_btn{
     max-width: 200px;
   }
-
-  #btn_fixed .menu_button{
-  width: 30px;
+  #btn_fixed .banner_btn:nth-child(2){
+  margin: 0 5px;
 }
-
+  #btn_fixed .menu_button{
+  width: 28px;
+}
+ .sign_up_btn{
+      width: 120px;
+    }
     .select{
       width: 40px;
       height: 40px;
 
     }
-
+    .sign_up{
+      text-align: left;
+    }
+ .query_btn{
+      width: 120px;
+    }
     .footer_nav {
         display: block;
         border-top: 1px solid #f1f1ef;
@@ -767,11 +848,27 @@ footer {
       border: none;
        margin-right: 10%;
     }
-    
+    .slider_caption{
+      font-size: 19px;
+      width: 70%;
+    }
+    .btn_mobile{
+      display: none;
+    }
+    .btn_desktop{
+      display: block;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-
+  #menu_section span {
+ 
+    padding: 7px 20px;
+    font-size: 20px;
+}
+.section_img{
+  width: 40px;
+}
     #banner_heading {
        
         font-size: 60px;
@@ -781,7 +878,7 @@ footer {
         line-height: 48px;
     }
     .menu_contents nav a {
-        font: 400 40px 'PT Serif', sans-serif;
+        font: 400 40px 'PT Serif',serif;
     }
     .backstory {
         text-align: left;
@@ -794,6 +891,12 @@ footer {
         display: inline-block;
         width: 45%;
         vertical-align: top;
+    }
+    .story_inner{
+      max-width: 340px;
+    }
+    .slider_story >.story_inner{
+      max-width: 298px;
     }
     .image_holder {
         width: 85%;
@@ -808,9 +911,7 @@ footer {
     .neighborhood_story {
         display: table-cell;
         width: 40%;
-    }
-    .neighborhood_story_inner {
-      max-width: 320px;
+        text-align: left;
     }
     .map {
         display: block;
@@ -841,6 +942,7 @@ footer {
     .slider_story {
         width: 50%;
         display: table-cell;
+        padding: 70px 30px;
     }
     .slider_story article {
         float: right;
@@ -852,20 +954,50 @@ footer {
         display: table-cell;
     }
     .signup_input {
-        width: 32.2%;
+        width: 32%;
         display: inline-block;
     }
-    .signup_input:not(:last-child) {
-        margin-right: 10px;
+    .signup_input:nth-child(2) {
+        margin:0 1.5%;
     }
+
     .query_input {
         display: inline-block;
         width: 30%;
     }
-    textarea.query_input {
-        width: 91%;
+    .query_input:nth-child(2){
+      margin: 0 1%;
     }
+    textarea.query_input {
+        width: 92.7%;
+    }
+   
     .copyright_inner{
       display: inline-block;
+    }
+    .copyright_inner span:nth-child(2){
+      padding: 0 20px;
+    }
+    .copyright_inner span:nth-child(2):after{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left:0;
+  width: 100%;
+  height: 10px;
+
+  border-left: 2px solid #f1f0ef;
+  border-right: 2px solid #f1f1ef;
+}
+    .footer_images{
+      min-height: 900px;
+      display: table;
+      width: 100%;
+      padding: 50px;
+    }
+    .footer_images_inner{
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
     }
 }
