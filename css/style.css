@@ -90,8 +90,6 @@ body {
 }
 
 header {
-    height:0;
-    background-color: rgba(1, 38, 70, 1);
     text-align: center;
 }
 
@@ -218,7 +216,7 @@ textarea {
 .mobile_view {
     width: 50%;
     margin: 0 auto;
-    font-style: none;
+    font-style: normal;
     font: 700 20px 'PT Serif', serif;
 }
 
@@ -382,7 +380,7 @@ textarea {
 
 .menu_contents nav a:hover {
     color: #fefefe;
-    opacity: 80%;
+    opacity: 0.8;
 }
 
 .story {
