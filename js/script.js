@@ -15,6 +15,7 @@ $(document).ready(function(){
 
 
 	$('.menu_button').click(function(e){
+		e.preventDefault();
 		$('.menu_items').addClass('menu_expand');
 		$('html, body').addClass('no_scroll');
 
